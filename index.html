@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/leisure.png">
+    <title>Patrick Kamba</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar flex">
+            <div class="logo flex"><a href="#about">Patrick Kamba</a></div>
+            <div class="nav-link">
+                <ul class="flex no-style">
+                    <!-- <li class="mr-10"><a href="#home">Home</a></li> -->
+                    <li ><a href="#about" class="nav-anchor">About</a></li>
+                    <li ><a href="#skills">Skills</a></li>
+                    <li ><a href="#projects">Projects</a></li>
+                    <li ><a href="#contacts">Contact</a></li>
+                </ul>
+            </div>
+            <div class="mode flex" id="toggle-btn">
+                <p class="material-icons-outlined mr-5">wb_sunny</p>
+                <p class="mode-txt">Mode</p>
+            </div>
+            <div class="flex nav-decor">
+                <ul class="flex no-style">
+                    <li><img class="nav-icon mr-10" src="./images/poker.png" alt=""></li>
+                    <li><img class="nav-icon mr-10" src="./images/leisure.png" alt=""></li>
+                    <li><img class="nav-icon mr-10" src="./images/leisure (1).png" alt=""></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="portfolio_body">
+        <!-- Need -->
+        <div class="bg-pattern-left bg-pattern-light
+        " id="bg-pattern-left"></div>
+        <div class="main-middle">
+        <div class="about" id="about">
+            <h1>About me</h1>
+            <div class="intro">
+                <p class="greeting">Hello There! my name is</p>
+                <h1 class="name">Patrick Kamba</h1>
+                <p>I am a student majoring in <span class="major">computer science</span> with a passion in designing and building <span class="major">web applications</span>.</p>
+                <p>I have a good level of knowledge and experience in <span class="field">Front End</span> as well as <span class="field">Back End </span>development.</p>
+                <p>Primary programming language: C++, Javascript.</p>
+                <p>Hobbit: Leetcode, Sports.</p>
+                <div class="socio-flex">
+                <button class="socio-btn "><a href="https://www.linkedin.com/in/patrick-kamba-29a320195/"><img src="./images/linkedin.png" alt="LinkedIn Account"></a> </button>
+                <button class="socio-btn "><a href="https://github.com/pat0kamba?tab=repositories"><img src="./images/github.png" alt="GitHub Account"></a></button>
+                <button class="socio-btn "><a href="https://twitter.com/patrickkamba8"><img src="./images/twitter.png" alt="Twitter Account"></a></button>
+                <button class="resume-btn"><a href="./images/patrick_kamba_resume_newer-0002.pdf" class="txt-clear">Resumé</a></button>
+                </div>
+            </div>
+         
+        </div>
+        <div class="skills" id="skills">
+            <h1>Technical Skills</h1>
+            <div class="skill-btn">
+                <button><img src="./images/c-.png" alt="c++ logo">C++</button>
+                <button><img src="./images/python.png" alt="Python logo">Python</button>
+                <button><img src="./images/html-5.png" alt="Html logo">Html</button>
+                <button><img src="./images/css-3.png" alt="Css logo">Css</button>
+                <button><img src="./images/tailwind-css-icon.png" alt="Tailwind css">tailwind css</button>
+                <button><img src="./images/java-script.png" alt="Javascript Logo">js</button>
+                <button><img src="./images/nodejs-icon.svg" alt="Node js Logo">Node js</button>
+                <button><img src="./images/atom.png" alt="React Js logo">React</button>
+                <button><img src="./images/material-ui-1.svg" alt="Material UI logo">Material UI</button>
+                <button><img src="./images/api.png" alt="Api logo">Rest Api</button>
+                <button><img src="./images/redux.svg" alt="Redux logo">Redux</button>
+                <button><img src="./images/mongodb-icon-1.svg" alt="Mongo DB logo">MongoDB</button>
+                <button><img src="./images/jwt-3.svg" alt="Json Web Token logo">jwt</button>
+                <button><img src="./images/git-icon.svg" alt="Git logo">Git</button>
+            </div>
+        </div>
+        <div class="projects" id="projects">
+            <h1>Projects</h1>
+            <div class="projects-links">
+                <div class="project_link grid">
+                    <div class="project_img">
+                        <img src="./images/Mango_pic.png" alt="Project image" aria-label="">
+                    </div>
+                    <div class="project_detail">
+                        <h3>E-commerce website Clone: Mango</h3><br>
+                        <p>This project is a responsive full-stack react application intended to be a clone of the Mango website (E-commerce website).</p><br>
+                        <p>Technologies used: <button class="skill-name skill-btn-clr-001">React </button> <button class="skill-name skill-btn-clr-002">React Router </button> <button class="skill-name skill-btn-clr-004">Material UI </button> <button class="skill-name skill-btn-clr-006">Node Js </button></p><br>
+                        <ul>
+                            <li>Used React Router Dom to create a dynamic single page application with nested routes</li> 
+                            <li>Used NodeJS and ExpressJS to create a backend api, and implement JWT authentication.</li>
+                            <li>Used Mongoose to connect, send and retrieve data to/from the MongoDB database after the user logs in.</li>
+                            <li>Used Material UI for styling, and building React Components</li>
+                        </ul>
+                        <span>Check Here: </span>
+                        <a href="https://e-commerce-app-3ba56.web.app" class="live-link">Live</a>
+                        <a href="https://github.com/pat0kamba/My-Ecommerce-React-App" class="repo-link">Repo</a>
+                    </div>
+                </div>
+               
+                <div class="project_link grid">
+                    <div class="project_img">
+                        <img src="./images/multi-page.jpg" alt="Project image" aria-label="">
+                    </div>
+                    <div class="project_detail">
+                        <h3>Designo Agency multi-page-website</h3><br>
+                        <p>This project is a guru level challenge from Frontend Mentor which requires to build a multi-page website using Html, Css, Js and any other Js library.</p><br>
+                        <p>Technologies used: <button class="skill-name skill-btn-clr-007">Html</button> <button class="skill-name skill-btn-clr-003">Css</button> <button class="skill-name skill-btn-clr-009">Figma</button></p><br>
+                        <ul>
+                            <li>Used Css Flexbox and Grid to create multiple layouts</li>
+                            <li>Built out Figma designs into realistic web pages</li>
+                            <li>Used Media queries to create responsive layouts for Mobile and Tablet</li>
+                        </ul>
+                        <span>Check Here: </span>
+                        <a href="#" class="live-link">Live</a>
+                        <a href="#" class="repo-link">Repo</a>
+                    </div>
+                </div>
+                
+                <div class="project_link grid">
+                    <div class="project_img">
+                        <img src="./images/country-pic-02.png" alt="Project image" aria-label="">
+                    </div>
+                    <div class="project_detail">
+                        <h3>Countries of the World website</h3><br>
+                        <p>This is a website that displays each country's profile containing the respective flag, capital, local currency, local language and more.</p><br>
+                        <p>Technologies used: <button class="skill-name skill-btn-clr-001">React</button> <button class="skill-name skill-btn-clr-005">React Hooks</button> <button class="skill-name skill-btn-clr-002">React Router</button> <button class="skill-name skill-btn-clr-008">Redux</button></p><br>
+                        <ul>
+                            <li>Fetched Data from an external Api (the rest countries api)</li>
+                            <li>Used Redux toolkit to manage multiple states through different React components</li>
+                            <li>Included Hooks from React Router V6 to help navigate through different pages</li>
+                            <li>Used React Hooks such as useState, useEffect and useRef</li>
+                        </ul>
+                        <span>Check Here: </span>
+                        <a href="https://countries-in-the-world-8180d.web.app/" class="live-link">Live</a>
+                        <a href="https://github.com/pat0kamba/Countries-of-the-world-website" class="repo-link">Repo</a>
+                    </div>
+                </div>
+                
+                <div class="project_link grid">
+                    <div class="project_img">
+                        <img src="./images/Task-Man.png" alt="Project image" aria-label="">
+                    </div>
+                    <div class="project_detail">
+                        <h3>Task Management Dashboard</h3><br>
+                        <p>Technologies used: <button class="skill-name skill-btn-clr-007">Html</button> <button class="skill-name skill-btn-clr-003">Css</button> <button class="skill-name skill-btn-clr-011">Chart Js</button></p><br>
+                        <ul>
+                            <li>Used Html, CSS and Javascript to build the dashboard</li>
+                            <li> Used CSS Flexbox and Grid to create multiple layouts</li>
+                            <li>Used ChartJS to implement different graphs into the dashboard</li>
+                            <li>Used Media queries for responsiveness</li>
+                        </ul>
+                        <span>Check Here: </span>
+                        <a href="https://dashboard-taskmanagement-616ba.web.app" class="live-link">Live</a>
+                        <a href="https://github.com/pat0kamba/Task-Management-Dashboard" class="repo-link">Repo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contacts" id="contacts">
+            <h1>Contact</h1>
+            <form action="https://formspree.io/f/xqkorgld" method="POST">
+                <h3>Get in Touch!</h3>
+                <input type="text" name="fullName" id="fullName" placeholder="Your Name*" required autocomplete="off"><br>
+                <input type="email" name="email" id="email" placeholder="Your Email*" required autocomplete="off"><br>
+                <input type="text" name="subject" id="subject" placeholder="Subject*" required><br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message*"></textarea><br>
+                <button type="submit" class="form-btn">Submit</button>
+            </form>
+        </div>
+        </div>
+        <div class="bg-pattern-right bg-pattern-light" id="bg-pattern-right">
+
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">
+            <p>Designed & built by Patrick Kamba</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./app.js"></script>
+</body>
+</html>

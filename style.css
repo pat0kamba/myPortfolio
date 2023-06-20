@@ -1,0 +1,457 @@
+/* Import the Nunito and Rubik Font */
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap'); */
+
+/* Css Reset */
+
+/* Box sizing rules */
+*, *::before, *::after{
+    box-sizing:border-box;
+}
+
+/* Remove list styles on ul and ol elements with a list role */
+
+
+/* set core body defaults */
+body{
+    min-height:100vh;
+    text-rendering:optimizeSpeed;
+    line-height:1.5;
+    font-family:'Rubik';
+    background-color:var(--bg-body-clr);
+    color:var(--clr-primary);
+    position:relative;
+
+}
+
+img, picture{
+    display:block;
+    max-width:100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, textarea, select, button{
+    font:inherit;
+}
+
+/* Remove default margin and padding*/
+*{
+    margin:0;
+    padding:0;
+}
+
+/* Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6
+{
+    overflow-wrap: break-word;
+}
+
+a{
+    text-decoration:none;
+    color:var(--clr-primary);
+}
+/* Css Custom Property */
+:root{
+    --clr-primary:#334b59;
+    --bg-body-clr:#ebecf0;
+    --clear-clr:#fff;
+    --project-bg-clr:#fff;
+    --project-clr:#334b59;
+    --skills-bg-clr:#fff;
+    --hover-effect-clr:#d4af37;
+    --bd-lg-radius:15px;
+    --bd-sm-radius:7px;
+    --btn-clr-primary:#442b48;
+
+    
+
+}
+
+.flex
+{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.no-style{
+    list-style:none;
+}
+/* set margin to 10px */
+.mr-10
+{
+    margin-right:30px;
+}
+.mr-5{
+    margin-right:5px;
+}
+
+.nav-icon
+{
+    width:40px;
+    aspect-ratio:1/1;
+}
+.nav-icon:hover{
+    cursor:grab;
+}
+
+.txt-clear{
+    color:var(--clear-clr);
+}
+nav{
+    border-bottom:1px solid var(--clr-primary);
+    width:100%;
+}
+header{
+    position:sticky;
+    top:0;
+    background-color:var(--bg-body-clr);
+}
+
+.nav-link a{
+    position: relative;
+    padding: 0 5px;
+  
+}
+
+.nav-link a::after{
+    content:"";
+    width:0;
+    height:3px;
+    position:absolute;
+    background-color:var(--hover-effect-clr);
+    left:0;
+    bottom:-4px;
+    transition:0.3s;
+    
+}
+.nav-link a:hover::after{
+    width:100%;
+}
+
+.nav-link a:hover, .logo a:hover{
+    font-weight:bold;
+}
+
+.nav-link li{
+    margin-right:10px;
+}
+
+.logo, .mode{
+    border-left:1px solid var(--clr-primary);
+    border-right:1px solid var(--clr-primary);
+    
+}
+.logo, .mode, .nav-decor{
+    width:15%;
+    height:40px;
+    place-content:center;
+    padding:7px 0;
+}
+.mode:hover{
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* Dark Mode class */
+.dark_mode{
+    /* background-color:var(--clr-primary);
+    color:#ffb39b; */
+    --clr-primary:#ffb39b;
+    --bg-body-clr:#334b59;
+    --project-bg-clr:#F1F6F9;
+    --project-clr:#643843;
+    --skills-bg-clr:#F1F6F9;
+    --hover-effect-clr:#1B9C85;
+}
+
+.lightMode{
+    display:none;
+}
+
+/* background-color: #ebecf0;
+opacity: 0.8;
+background-image:  linear-gradient(#dadada 1px, transparent 1px), linear-gradient(to right, #dadada 1px, #ebecf0 1px);
+background-size: 20px 20px; */
+.portfolio_body{
+    display:grid;
+    grid-template-columns:10% 80% 10%;
+    /* width:80%;
+    margin:auto; */
+}
+.bg-pattern-light{
+    border:1px solid var(--clr-primary);
+    border-top:none;
+    border-bottom:none;
+    background:url("./images/bg-pattern-002.jpg");
+    background-repeat:repeat;
+    background-position:center;
+    background-size:250px;
+    
+}
+
+.bg-pattern-dark{
+    border:1px solid var(--clr-primary);
+    border-top:none;
+    border-bottom:none;
+    background:url("./images/bg-pattern-005.jpg");
+    background-repeat:repeat;
+    background-position:center;
+    background-size:120px;
+    
+}
+.intro{
+    margin-top:40px;
+}
+
+.name{
+    font-size:8em;
+}
+.major, .field{
+    font-weight:bold;
+    text-transform:capitalize;
+
+}
+.skill-btn > button > img {
+    width:100%;
+    aspect-ratio:1/1;
+}
+.skill-btn > button:hover{
+    cursor:pointer;
+}
+
+.skill-btn{
+    display:grid;
+    grid-template-columns:repeat(7, 1fr);
+    gap:30px;
+    border:1px solid var(--clr-primary);
+    padding:30px;
+    border-radius:var(--bd-lg-radius);
+    background-color:var(--clear-clr);
+}
+
+.live-link{
+    color:green;
+}
+
+.repo-link{
+    color:blue;
+}
+.about, .skills, .projects{
+    width:70%;
+    margin:auto;
+    padding:100px 0;
+}
+/* .about{
+    display:flex;
+    flex-direction:column;
+    place-content:center;
+    height:100vh;
+} */
+
+/* Define colors for different skill buttons */
+.skill-btn-clr-001{
+    background-color: #30d5c8;
+    color:#fff;
+}
+.skill-btn-clr-002{
+   background-color:#dea2ac;
+   color:#fff; 
+}
+.skill-btn-clr-003{
+    background-color:#634430;
+    color:#fff;
+}
+.skill-btn-clr-004{
+    background-color:#d4af37;
+    color:#fff;
+}
+.skill-btn-clr-005{
+    background-color:#4b8ca3;
+    color:#fff;
+}
+.skill-btn-clr-006{
+    background-color: #5b9279;
+    color:#fff;
+}
+.skill-btn-clr-007{
+    background-color:#ffcda2;
+    color:#fff;
+}
+.skill-btn-clr-008{
+    background-color:#bf5700;
+    color:#fff;
+}
+.skill-btn-clr-009{
+    background-color: #bf00ff;
+    color:#fff;
+}
+
+.skill-btn-clr-011{
+    background-color: #5b9279;
+    color:#fff;
+}
+
+.skill-name{
+    padding:0 3px;
+    border:none;
+    border-radius:7px;
+}
+.socio-btn{
+    border:none;
+    border-radius:7px;
+}
+
+.socio-btn img{
+    width:40px; 
+    aspect-ratio:1/1;
+}
+
+.socio-flex{
+    display:flex;
+    justify-content:flex-start;
+    gap:10px;
+    margin-top:40px;
+
+}
+.resume-btn{
+    padding:7px 10px;
+    border:none; 
+    border-radius:7px;
+    background-color:var(--btn-clr-primary);
+}
+
+
+/* Footer */
+footer{
+    display:flex;
+    place-content:center;
+    background-color:#fff;
+    color:var(--project-clr);
+    padding:10px;
+    border-top:1px solid var(--clr-primary);
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:auto;
+    gap:50px;
+    padding:30px;
+    border-radius:20px;
+}
+
+.project_img > img{
+    border:none;
+    border-radius:10px;
+
+}
+
+.project_link{
+    border:1px solid var(--clr-primary);
+    margin-bottom:40px;
+    background-color:var(--project-bg-clr);
+    color:var(--project-clr);
+}
+
+
+.contacts{
+    width:70%;
+    margin:50px auto;
+    border:1px solid var(--clr-primary);
+    border-radius:10px;
+}
+
+.contacts > form{
+    width:60%;
+    margin:auto;
+    padding:20px;
+    border:1px solid var(--clr-primary);
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+    place-content:center;
+}
+
+.contacts > form > input[type="text"], .contacts > form > input[type="email"], textarea {
+    width:100%;
+    margin-bottom:20px;
+    padding:10px;
+}
+
+.contacts > form > button{
+    padding:10px;
+}
+
+
+.form-btn{
+    background-color:var(--clr-primary);
+    color:#fff;
+    border:none;
+    border-radius:7px;
+}
+
+.form-btn:hover{
+    cursor:pointer;
+}
+
+/* Responsiveness */
+@media only screen and (max-width:1280px){
+    .name{
+        font-size:4em;
+    }
+    .grid{
+        grid-template-columns:1fr;
+    }
+    .contacts form{
+        width:90%;
+    }
+    .skill-btn{
+        grid-template-columns:repeat(4, 1fr);
+    }
+}
+
+@media only screen and (max-width:912px){
+    .portfolio_body{
+        grid-template-columns:1fr;
+    }
+    .about, .skills, .projects{
+    width:90%;
+    margin:auto;
+    padding:100px 0;
+    }
+    .contacts{
+        width:90%;
+    }
+}
+
+@media only screen and (max-width:767px)
+{
+    .nav-decor, .logo{
+        display:none;
+    }
+
+    .flex{
+        justify-content: space-around;
+    }
+    .mode{
+        border:none;
+    }
+  
+    .skill-btn{
+        grid-template-columns:repeat(3, 1fr);
+    }
+    .mode-txt{
+        display:none;
+    }
+    .name{
+        font-size:2em;
+    }
+    .about, .skills, .projects{
+    width:95%;
+    margin:auto;
+    padding:100px 0;
+    }
+    .contacts{
+        width:95%;
+    }
+}
