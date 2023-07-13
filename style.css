@@ -20,6 +20,7 @@ body{
     background-color:var(--bg-body-clr);
     color:var(--clr-primary);
     position:relative;
+    overflow-x:hidden;
 
 }
 
@@ -61,9 +62,6 @@ a{
     --bd-lg-radius:15px;
     --bd-sm-radius:7px;
     --btn-clr-primary:#442b48;
-
-    
-
 }
 
 .flex
@@ -241,11 +239,21 @@ background-size: 20px 20px; */
     margin:auto;
     padding:100px 0;
 }
+.about{
+    position:relative;
+}
 /* .about{
     display:flex;
     flex-direction:column;
     place-content:center;
     height:100vh;
+} */
+
+/* .bg-img-1{
+    margin:20px 0;
+    transform:rotateY(180deg);
+    height:50px;
+    background-color:var(--clr-primary);
 } */
 
 /* Define colors for different skill buttons */
