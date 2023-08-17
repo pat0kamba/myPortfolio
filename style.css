@@ -401,6 +401,12 @@ footer{
 .form-btn:hover{
     cursor:pointer;
 }
+.certificate a{
+    color:#1B9C85;
+}
+.certificate{
+    margin-top:40px;
+}
 
 /* Responsiveness */
 @media only screen and (max-width:1280px){
